@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Badan Eksekutif Mahasiswa Fakultas Teknik - Universitas Muria Kudus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Sunshine - Responsive vCard Template" />
-    <meta name="keywords" content="Badan Eksekutif Mahasiswa Fakultas Teknik - Universitas Muria Kudus, Profile" />
-    <meta name="author" content="lmtheme" />
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' />
+    <meta name="description" content="Badan Eksekutif Mahasiswa Fakultas Teknik - Universitas Muria Kudus, Profile" />
+    <meta name="keywords" content="Badan Eksekutif Mahasiswa Fakultas Teknik - Universitas Muria Kudus, Profile, Universitas, BEM, UMK, Kudus" />
+    <meta name="author" content="CyineID" />
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -21,139 +22,224 @@
     <!-- This styles needs for demo -->
     <link rel="stylesheet" href="preview/lmpixels-demo-panel.css" type="text/css">
     <!-- /This styles needs for demo -->
-    
+
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src='www.google.com/recaptcha/api.js'></script>
-	
-	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "Organization",
-	  "url": "http://www.example.com",
-	  "name": "BEM FT Universitas Muria Kudus.",
-	  "contactPoint": {
-		"@type": "ContactPoint",
-		"telephone": "+1-401-555-1212",
-		"contactType": "Customer service"
-	  }
+	<style>
+	.isi{
+	   width: 120px;
+	   height: 120px;
 	}
-	</script>
-  </head>
 
-  <body>
+	.gears {
+		width: 150px;
+	   margin: 100px auto;
+	   display: block;
+	   text-align: center;
+	}
+
+	.gears .big {
+	   width: 150px;
+	   height: 150px;
+	   margin-bottom: -135px;
+	   -webkit-transform-origin: center;
+	   -moz-transform-origin: center;
+	   -o-transform-origin: center;
+	   transform-origin: center;
+	   -webkit-animation: rotate 1.5s linear infinite;
+	   -moz-animation: rotate 1.5s linear infinite;
+	   -o-animation: rotate 1.5s linear infinite;
+	   animation: rotate 1.5s linear infinite
+	}
+
+
+
+	@keyframes rotate {
+	   0% {
+		  -webkit-transform: rotate(0);
+		  -moz-transform: rotate(0);
+		  -o-transform: rotate(0);
+		  transform: rotate(0);
+	   }
+	   100% {
+		  -webkit-transform: rotate(180deg);
+		  -moz-transform: rotate(180deg);
+		  -o-transform: rotate(180deg);
+		  transform: rotate(180deg);
+	   }
+	}
+
+	@-webkit-keyframes reverseRotate {
+	   0% {
+		  -webkit-transform: rotate(180deg);
+		  transform: rotate(180deg);
+	   }
+	   100% {
+		  -webkit-transform: rotate(0);
+		  transform: rotate(0);
+	   }
+	}
+
+	@-moz-keyframes reverseRotate {
+	   0% {
+		  -moz-transform: rotate(180deg);
+		  transform: rotate(180deg);
+	   }
+	   100% {
+		  -moz-transform: rotate(0);
+		  transform: rotate(0);
+	   }
+	}
+
+	@-o-keyframes reverseRotate {
+	   0% {
+		  -o-transform: rotate(180deg);
+		  transform: rotate(180deg);
+	   }
+	   100% {
+		  -o-transform: rotate(0);
+		  transform: rotate(0);
+	   }
+	}
+
+	@keyframes reverseRotate {
+	   0% {
+		  -webkit-transform: rotate(180deg);
+		  -moz-transform: rotate(180deg);
+		  -o-transform: rotate(180deg);
+		  transform: rotate(180deg);
+	   }
+	   100% {
+		  -webkit-transform: rotate(0);
+		  -moz-transform: rotate(0);
+		  -o-transform: rotate(0);
+		  transform: rotate(0);
+	   }
+	}
+
+	</style>
+
+    
+</head>
+
+<body>
     <!-- Loading animation -->
     <div class="preloader">
-      <div class="preloader-animation">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-      </div>
+        <div class="gears">
+		   <img src="images/gear.png" alt="gear" class="big">
+		   <img src="images/isi.png" alt="isi" class="isi">
+		</div>
     </div>
     <!-- /Loading animation -->
 
     <div id="page" class="page">
-      <!-- Header -->
-      <header id="site_header" class="header">
-        <div class="my-photo">
-          <img src="images/cover.jpg" alt="image">
-          <div class="mask"></div>
-        </div>
+        <!-- Header -->
+        <header id="site_header" class="header">
+            <div class="my-photo">
+                <img src="images/cover.jpg" alt="image">
+                <div class="mask"></div>
+            </div>
 
-        <div class="site-title-block">
-          <h1 class="site-title">BEM Fakultas Teknik</h1>
-          <p class="site-description">Universitas Muria Kudus</p>
-        </div>
+            <div class="site-title-block">
+                <h1 class="site-title">BEM Fakultas Teknik</h1>
+                <p class="site-description">Universitas Muria Kudus</p>
+            </div>
 
-        <a class="menu-toggle mobile-visible">
-          <i class="fa fa-bars"></i>
-        </a>
-      </header>
-      <!-- /Header -->
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <!-- /Header -->
 
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-          <!-- Navigation & Social buttons -->
-          <div class="site-nav mobile-menu-hide">
-            <!-- Main menu -->
-            <ul id="nav" class="site-main-menu">
-              <!-- About Me Subpage link -->
-              <li>
-                <a class="pt-trigger" href="#tentang" data-animation="58" data-goto="1">Tentang</a>
-              </li>
-              <!-- /About Me Subpage link -->
-              <li>
-                <a class="pt-trigger" href="#kegiatan" data-animation="59" data-goto="2">Kegiatan</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#anggota" data-animation="60" data-goto="3">Anggota</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#blog" data-animation="61" data-goto="4">Blog</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#hubungi" data-animation="58" data-goto="5">Hubungi</a>
-              </li>
-            </ul>
-            <!-- /Main menu -->
+        <!-- Main Content -->
+        <div id="main" class="site-main">
+            <!-- Page changer wrapper -->
+            <div class="pt-wrapper">
+                <!-- Navigation & Social buttons -->
+                <div class="site-nav mobile-menu-hide">
+                    <!-- Main menu -->
+                    <ul id="nav" class="site-main-menu">
+                        <!-- About Me Subpage link -->
+                        <li>
+                            <a class="pt-trigger" href="#tentang" data-animation="58" data-goto="1">Tentang</a>
+                        </li>
+                        <!-- /About Me Subpage link -->
+                        <li>
+                            <a class="pt-trigger" href="#kegiatan" data-animation="59" data-goto="2">Kegiatan</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#anggota" data-animation="60" data-goto="3">Anggota</a>
+                        </li>
+						<!-- 
+                        <li>
+                            <a class="pt-trigger" href="#blog" data-animation="61" data-goto="4">Blog</a>
+                        </li>
+						 -->
+                        <li>
+                            <a class="pt-trigger" href="#app" data-animation="30" data-goto="5">Apps</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#hubungi" data-animation="58" data-goto="6">Hubungi</a>
+                        </li>
+                    </ul>
+                    <!-- /Main menu -->
 
-            <!-- Social buttons -->
-            <ul class="social-links">
-              <!-- <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
-              <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="tip social-button" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-              <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
-              <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
-            </ul>
-            <!-- /Social buttons -->
-          </div>
-          <!-- Navigation & Social buttons -->
-
-          <!-- Subpages -->
-          <div class="subpages">
-            <!-- About Me Subpage -->
-            <section class="pt-page pt-page-1" data-id="tentang">
-              <div class="section-title-block">
-                <h2 class="section-title">Tentang Kita</h2>
-                <h5 class="section-description">Badan Eksekutif Mahasiswa</h5>
-              </div>
-				<div class="block-title">
-                <h3>Informasi</h3>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-12 mobile-visible subpage-block">
-                  <div class="my-photo-small">
-                    <img src="images/bemft.png" alt="image">
-                  </div>
+                    <!-- Social buttons -->
+                    <ul class="social-links">
+                        <!-- <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
+                        <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="tip social-button" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+                        <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+                    </ul>
+                    <!-- /Social buttons -->
                 </div>
-                <div class="col-sm-12 col-md-12 subpage-block" style="text-align:center;">
-                  <div class="general-info">
-                    <img src="images/kabinet.png" alt="image">
-					<br>
-                    <h3>Informasi</h3>
-                    <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
-                    <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus. Sed tellus nibh, lobortis ut blandit sed, convallis a mauris.</p>
-                  </div>
-                </div>
-				<div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="general-info">
-                    <h3 style="text-align:center;">Visi</h3>
-                    <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
-                  </div>
-                </div>
-				<div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="general-info">
-                    <h3 style="text-align:center;">Misi</h3>
-                    <ol type="1">
-					  <li>Coffee</li>
-					  <li>Tea</li>
-					  <li>Milk</li>
-					</ol>
-					</div>
-                </div>
-			<!--
+                <!-- Navigation & Social buttons -->
+
+                <!-- Subpages -->
+                <div class="subpages">
+                    <!-- About Me Subpage -->
+                    <section class="pt-page pt-page-1" data-id="tentang">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Tentang Kita</h2>
+                            <h5 class="section-description">Badan Eksekutif Mahasiswa</h5>
+                        </div>
+                        <div class="block-title">
+                            <h3>Informasi</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mobile-visible subpage-block">
+                                <div class="my-photo-small">
+                                    <img src="images/bemft.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 subpage-block" style="text-align:center;">
+                                <div class="general-info">
+                                    <img src="images/kabinet.png" alt="image">
+                                    <br>
+                                    <h3>Informasi</h3>
+                                    <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
+                                    <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus. Sed tellus nibh, lobortis ut blandit sed, convallis a mauris.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="general-info">
+                                    <h3 style="text-align:center;">Visi</h3>
+                                    <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="general-info">
+                                    <h3 style="text-align:center;">Misi</h3>
+                                    <ol type="1">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!--
                 <div class="col-sm-4 col-md-4 subpage-block">
                   <div class="block end">
                     <ul class="info-list">
@@ -207,690 +293,1026 @@
                   </div>
                 </div>
 				-->
-			  </div>
+                        </div>
 
-              <!-- Services block -->
-              <div class="block-title">
-                <h3>Departemen</h3>
-              </div>
+                        <!-- Services block -->
+                        <div class="block-title">
+                            <h3>Departemen</h3>
+                        </div>
 
-              <div class="row">
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/psdm.png" alt="Responsive Design">
-                      <h4>PSDM</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/psdm.png" alt="Responsive Design">
+                                        <h4>PSDM</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/sosmapol.png" alt="Copywriter">
+                                        <h4>SOSMAPOL</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/ristek.png" alt="E-Commerce">
+                                        <h4>RISTEK</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/pora.png" alt="Management">
+                                        <h4>PORA</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/medinfo.png" alt="Management">
+                                        <h4>MEDINFO</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="service-block">
+                                    <div class="service-info">
+                                        <img src="images/departemen/hublu.png" alt="Management">
+                                        <h4>HUBLU</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Services block -->
+
+                        <!-- Clients block -->
+                        <div class="block-title">
+                            <h3>Ormawa Teknik</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_1.png" alt="image"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_2.png" alt="image"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_3.png" alt="image"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_4.png" alt="image"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_5.png" alt="image"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-2 subpage-block">
+                                <div class="client_block">
+                                    <a href="#" target="_blank"><img src="images/clients/client_6.png" alt="image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Clients block -->
+                    </section>
+                    <!-- End of About Me Subpage -->
+
+                    <!-- Resume Subpage -->
+                    <section class="pt-page pt-page-2" data-id="resume">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Kegiatan</h2>
+                            <h5 class="section-description">Daftar Acara</h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Akademik</h3>
+                                </div>
+                                <div class="timeline">
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">2010</h5>
+                                        <h4 class="event-name">Specialization Course</h4>
+                                        <span class="event-description">University of Studies</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">2009</h5>
+                                        <h4 class="event-name">Specialization Course</h4>
+                                        <span class="event-description">University of Studies</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">2008</h5>
+                                        <h4 class="event-name">Specialization Course</h4>
+                                        <span class="event-description">University of Studies</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Non-Akademik</h3>
+                                </div>
+                                <div class="timeline">
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">Dec 2012 - Current</h5>
+                                        <h4 class="event-name">Frontend-developer</h4>
+                                        <span class="event-description">Web Agency</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">Dec 2011 - Nov 2012</h5>
+                                        <h4 class="event-name">Web Designer</h4>
+                                        <span class="event-description">Apple Inc.</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                    <!-- Single event -->
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">Jan 2010 - Dec 2011</h5>
+                                        <h4 class="event-name">Graphic Designer</h4>
+                                        <span class="event-description">Web Agency</span>
+                                        <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- End Resume Subpage -->
+
+
+                    <!-- Anggota Subpage -->
+                    <section class="pt-page pt-page-3" data-id="portfolio">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Anggota</h2>
+                            <h5 class="section-description">Daftar anggota aktif</h5>
+                        </div>
+
+                        <!-- Portfolio Content -->
+                        <div class="portfolio-content">
+
+                            <!-- Portfolio filter -->
+                            <ul id="portfolio_filters" class="portfolio-filters">
+                                <li class="active">
+                                    <a class="filter btn btn-sm btn-link active" data-group="all">SEMUA</a>
+                                </li>
+								<li>
+                                    <a class="filter btn btn-sm btn-link" data-group="bph">BPH</a>
+                                </li>
+								<li>
+                                    <a class="filter btn btn-sm btn-link" data-group="kadep">KADEP</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="psdm">PSDM</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="sosmapol">SOSMAPOL</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="ristek">RISTEK</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="pora">PORA</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="medinfo">MEDINFO</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="hublu">HUBLU</a>
+                                </li>
+                            </ul>
+                            <!-- End of Portfolio filter -->
+
+                            <!-- Portfolio Grid -->
+                            <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+							
+                                <figure class="item" data-groups='["all", "bph"]'>
+                                    <a href="images/anggota/bph/yusuf.jpg" class="lightbox" title="Yusuf">
+                                        <img src="images/anggota/bph/yusuf.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Yusuf</h5>
+                                            <small>BPH</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "bph"]'>
+                                    <a href="images/anggota/bph/deni.jpg" class="lightbox" title="Deni">
+                                        <img src="images/anggota/bph/deni.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Deni</h5>
+                                            <small>BPH</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "bph"]'>
+                                   <a href="images/anggota/bph/dena.jpg" class="lightbox" title="Dena">
+                                        <img src="images/anggota/bph/dena.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Dena</h5>
+                                            <small>BPH</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "bph"]'>
+                                    <a href="images/anggota/bph/yohana.jpg" class="lightbox" title="Yohana">
+                                        <img src="images/anggota/bph/yohana.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Yohana</h5>
+                                            <small>BPH</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "bph"]'>
+                                    <a href="images/anggota/bph/firoh.jpg" class="lightbox" title="Firoh">
+                                        <img src="images/anggota/bph/firoh.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Firoh</h5>
+                                            <small>BPH</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "kadep"]'>
+                                    <a href="images/anggota/kadep/dwi.jpg" class="lightbox" title="Dwi">
+                                        <img src="images/anggota/kadep/dwi.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Dwi</h5>
+                                            <small>Kepala Departemen</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "kadep"]'>
+                                    <a href="images/anggota/kadep/fiza.jpg" class="lightbox" title="Fiza">
+                                        <img src="images/anggota/kadep/fiza.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Fiza</h5>
+                                            <small>Kepala Departemen</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "kadep"]'>
+                                    <a href="images/anggota/kadep/manarul.jpg" class="lightbox" title="Manarul">
+                                        <img src="images/anggota/kadep/manarul.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Manarul</h5>
+                                            <small>Kepala Departemen</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "hublu"]'>
+                                    <a href="images/anggota/hublu/bayu.jpg" class="lightbox" title="Bayu">
+                                        <img src="images/anggota/hublu/bayu.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Bayu</h5>
+                                            <small>Hubungan Luar</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "hublu"]'>
+                                    <a href="images/anggota/hublu/fatma.jpg" class="lightbox" title="Fatma">
+                                        <img src="images/anggota/hublu/fatma.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Fatma</h5>
+                                            <small>Hubungan Luar</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "hublu"]'>
+                                    <a href="images/anggota/hublu/lia.jpg" class="lightbox" title="Lia">
+                                        <img src="images/anggota/hublu/lia.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Lia</h5>
+                                            <small>Hubungan Luar</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "hublu"]'>
+                                    <a href="images/anggota/hublu/tea.jpg" class="lightbox" title="Tea">
+                                        <img src="images/anggota/hublu/tea.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Tea</h5>
+                                            <small>Hubungan Luar</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								
+								<figure class="item" data-groups='["all", "medinfo"]'>
+                                    <a href="images/anggota/medinfo/gilang.jpg" class="lightbox" title="Gilang">
+                                        <img src="images/anggota/medinfo/gilang.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Gilang</h5>
+                                            <small>Media dan Informasi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "medinfo"]'>
+                                    <a href="images/anggota/medinfo/ivan.jpg" class="lightbox" title="Ivan">
+                                        <img src="images/anggota/medinfo/ivan.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Ivan</h5>
+                                            <small>Media dan Informasi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "medinfo"]'>
+                                    <a href="images/anggota/medinfo/naufal.jpg" class="lightbox" title="Naufal">
+                                        <img src="images/anggota/medinfo/naufal.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Naufal</h5>
+                                            <small>Media dan Informasi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "medinfo"]'>
+                                    <a href="images/anggota/medinfo/zaenal.jpg" class="lightbox" title="Zaenal">
+                                        <img src="images/anggota/medinfo/zaenal.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Zaenal</h5>
+                                            <small>Media dan Informasi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "pora"]'>
+                                    <a href="images/anggota/pora/habibi.jpg" class="lightbox" title="Habibi">
+                                        <img src="images/anggota/pora/habibi.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Habibi</h5>
+                                            <small>Pemuda dan Olahraga</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "pora"]'>
+                                    <a href="images/anggota/pora/haris.jpg" class="lightbox" title="Haris">
+                                        <img src="images/anggota/pora/haris.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Haris</h5>
+                                            <small>Pemuda dan Olahraga</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "pora"]'>
+                                    <a href="images/anggota/pora/lala.jpg" class="lightbox" title="Lala">
+                                        <img src="images/anggota/pora/lala.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Lala</h5>
+                                            <small>Pemuda dan Olahraga</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "psdm"]'>
+                                    <a href="images/anggota/psdm/mariana.jpg" class="lightbox" title="Mariana">
+                                        <img src="images/anggota/psdm/mariana.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Mariana</h5>
+                                            <small>PSDM</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "psdm"]'>
+                                    <a href="images/anggota/psdm/risky.jpg" class="lightbox" title="Rizky">
+                                        <img src="images/anggota/psdm/risky.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Rizky</h5>
+                                            <small>PSDM</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "psdm"]'>
+                                    <a href="images/anggota/psdm/tika.jpg" class="lightbox" title="Tika">
+                                        <img src="images/anggota/psdm/tika.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Tika</h5>
+                                            <small>PSDM</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "psdm"]'>
+                                    <a href="images/anggota/psdm/viki.jpg" class="lightbox" title="Viki">
+                                        <img src="images/anggota/psdm/viki.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Viki</h5>
+                                            <small>PSDM</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "ristek"]'>
+                                    <a href="images/anggota/ristek/fikie.jpg" class="lightbox" title="Fikie">
+                                        <img src="images/anggota/ristek/fikie.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Fikie</h5>
+                                            <small>Riset dan Teknologi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "ristek"]'>
+                                    <a href="images/anggota/ristek/ana.jpg" class="lightbox" title="Ana">
+                                        <img src="images/anggota/ristek/ana.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Ana</h5>
+                                            <small>Riset dan Teknologi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "ristek"]'>
+                                    <a href="images/anggota/ristek/hilmi.jpg" class="lightbox" title="Hilmi">
+                                        <img src="images/anggota/ristek/hilmi.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Hilmi</h5>
+                                            <small>Riset dan Teknologi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "ristek"]'>
+                                    <a href="images/anggota/ristek/jalu.jpg" class="lightbox" title="Jalu">
+                                        <img src="images/anggota/ristek/jalu.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Jalu</h5>
+                                            <small>Riset dan Teknologi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "ristek"]'>
+                                    <a href="images/anggota/ristek/jaz.jpg" class="lightbox" title="Jaz">
+                                        <img src="images/anggota/ristek/jaz.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Jaz</h5>
+                                            <small>Riset dan Teknologi</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "sosmapol"]'>
+                                    <a href="images/anggota/sosmapol/ricky.jpg" class="lightbox" title="Ricky">
+                                        <img src="images/anggota/sosmapol/ricky.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Ricky</h5>
+                                            <small>Sosial, Masyarakat dan Politik</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "sosmapol"]'>
+                                    <a href="images/anggota/sosmapol/rina.jpg" class="lightbox" title="Rina">
+                                        <img src="images/anggota/sosmapol/rina.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Rina</h5>
+                                            <small>Sosial, Masyarakat dan Politik</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "sosmapol"]'>
+                                    <a href="images/anggota/sosmapol/savira.jpg" class="lightbox" title="Savira">
+                                        <img src="images/anggota/sosmapol/savira.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Savira</h5>
+                                            <small>Sosial, Masyarakat dan Politik</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								<figure class="item" data-groups='["all", "sosmapol"]'>
+                                    <a href="images/anggota/sosmapol/una.jpg" class="lightbox" title="Una">
+                                        <img src="images/anggota/sosmapol/una.jpg" alt="">
+                                        <div>
+                                            <h5 class="name">Una</h5>
+                                            <small>Sosial, Masyarakat dan Politik</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+								
+                            </div>
+                            <!-- /Portfolio Grid -->
+
+                        </div>
+                        <!-- /Portfolio Content -->
+
+                    </section>
+                    <!-- /Anggota Subpage -->
+
+                    <!-- Blog Subpage -->
+                    <section class="pt-page pt-page-4" data-id="blog">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Blog</h2>
+                            <h5 class="section-description">My Diary</h5>
+                        </div>
+                        <div class="blog-masonry">
+                            <!-- Blog Post 1 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">6</span><span class="month">Dec</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">Travel</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 1 -->
+
+                            <!-- Blog Post 2 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">3</span><span class="month">Nov</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">jQuery</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">One Framework, Every Device</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 2 -->
+
+                            <!-- Blog Post 3 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">12</span><span class="month">Oct</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">Sport</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Designed for Everyone, Everywhere</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 3 -->
+
+                            <!-- Blog Post 4 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">18</span><span class="month">Aug</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">CSS</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">An Introduction To PostCSS</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 4 -->
+
+                            <!-- Blog Post 5 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">2</span><span class="month">Jul</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">CSS3</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Original and Innovative Web Layouts</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 5 -->
+
+                            <!-- Blog Post 6 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">8</span><span class="month">May</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">HTML5</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 6 -->
+
+                            <!-- Blog Post 7 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">7</span><span class="month">Apr</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">Design</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Navigation for Mega-Sites</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 7 -->
+
+                            <!-- Blog Post 8 -->
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a href="blog-post-1.html">
+                                            <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">21</span><span class="month">Mar</span>
+                                                <!--<span class="year">2016</span>-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a href="#">CSS3</a></li>
+                                        </ul>
+                                        <a href="blog-post-1.html">
+                                            <h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Blog Post 8 -->
+                        </div>
+                    </section>
+                    <!-- End Blog Subpage -->
+
+                    <!-- Tool Subpage -->
+                    <section class="pt-page pt-page-5" data-id="app">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Layanan</h2>
+                            <h5 class="section-description">Layanan BEM</h5>
+                        </div>
+
+                        <!-- Fun facts block -->
+                        <div class="block-title">
+                            <h3>Layanan</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <a class="pt-trigger" href="#formasi" data-animation="61" data-goto="7">
+                                    <div class="fun-fact-block gray-bg">
+                                        <i class="pe-7s-icon pe-7s-smile"></i>
+                                        <h4>FORMASI</h4>
+                                        <h6>Form Aspirasi Mahasiswa</h6>
+                                        <span class="fun-value">1,024</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <a class="pt-trigger" href="#formasi" data-animation="61" data-goto="8">
+                                    <div class="fun-fact-block">
+                                        <i class="pe-7s-icon pe-7s-alarm"></i>
+                                        <h4>FKM</h4>
+                                        <h6>Form Keluhan Mahasiswa</h6>
+                                        <span class="fun-value">6,256</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <a class="pt-trigger" href="#formasi" data-animation="61" data-goto="9">
+                                    <div class="fun-fact-block gray-bg">
+                                        <i class="pe-7s-icon pe-7s-medal"></i>
+                                        <h4>FORKRISA</h4>
+                                        <h6>Form Kritik & Saran</h6>
+                                        <span class="fun-value">21</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                        <!-- End of Fun fucts block -->
+                    </section>
+                    <!-- End Contact Subpage -->
+
+                    <!-- Contact Subpage -->
+                    <section class="pt-page pt-page-6" data-id="contact">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Hubungi Kami</h2>
+                            <h5 class="section-description">Kontak Person BEM Teknik</h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Alamat</h3>
+                                </div>
+                                <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                                <div class="contact-info-block">
+                                    <div class="ci-icon">
+                                        <i class="pe-7s-icon pe-7s-map-marker"></i>
+                                    </div>
+                                    <div class="ci-text">
+                                        <h5>Kudus, Jawa Tengah, Indonesia</h5>
+                                    </div>
+                                </div>
+                                <div class="contact-info-block">
+                                    <div class="ci-icon">
+                                        <i class="pe-7s-icon pe-7s-mail"></i>
+                                    </div>
+                                    <div class="ci-text">
+                                        <h5>bemteknik@umk.ac.id</h5>
+                                    </div>
+                                </div>
+                                <div class="contact-info-block">
+                                    <div class="ci-icon">
+                                        <i class="pe-7s-icon pe-7s-call"></i>
+                                    </div>
+                                    <div class="ci-text">
+                                        <h5>+123 654 78900</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Contact Form</h3>
+                                </div>
+                                <form id="contact-form" method="post" action="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/contact_form/contact_form.php">
+
+                                    <div class="messages"></div>
+
+                                    <div class="controls">
+                                        <div class="form-group">
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-user"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-envelope"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-comment"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+
+                                        <input type="submit" class="button btn-send" value="Send message">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Contact Subpage -->
+
+                    <!-- FORM FORMASI -->
+                    <section class="pt-page pt-page-7" data-id="formasi">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Layanan</h2>
+                            <h5 class="section-description">Layanan BEM</h5>
+                        </div>
+
+                        <div class="block-title">
+                            <h3>FORMASI</h3>
+                        </div>
+                        <form id="contact-form" method="post" action="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/contact_form/contact_form.php">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-user"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-envelope"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-comment"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+
+                                <input type="submit" class="button btn-send" value="Send message">
+                            </div>
+                        </form>
+                    </section>
+                    <!-- End Contact Subpage -->
+
+                    <!-- FORM FKM -->
+                    <section class="pt-page pt-page-8" data-id="fkm">
+                        <div class="block-title">
+                            <h3>FKM</h3>
+                        </div>
+                        <form id="contact-form" method="post" action="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/contact_form/contact_form.php">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-user"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-envelope"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-comment"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+
+                                <input type="submit" class="button btn-send" value="Send message">
+                            </div>
+                        </form>
+                    </section>
+                    <!-- End Contact Subpage -->
+
+                    <!-- FORM FORKRISA -->
+                    <section class="pt-page pt-page-9" data-id="forkrisa">
+                        <div class="block-title">
+                            <h3>FORKRISA</h3>
+                        </div>
+                        <form id="contact-form" method="post" action="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/contact_form/contact_form.php">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-user"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-envelope"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                    <div class="form-control-border"></div>
+                                    <i class="form-control-icon fa fa-comment"></i>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+
+                                <input type="submit" class="button btn-send" value="Send message">
+                            </div>
+                        </form>
+                    </section>
+                    <!-- End Contact Subpage -->
                 </div>
-
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/sosmapol.png" alt="Copywriter">
-                      <h4>SOSMAPOL</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/ristek.png" alt="E-Commerce">
-                      <h4>RISTEK</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/pora.png" alt="Management">
-                      <h4>PORA</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                </div>
-				<div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/medinfo.png" alt="Management">
-                      <h4>MEDINFO</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                </div>
-				<div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="service-block"> 
-                    <div class="service-info">
-                      <img src="images/departemen/hublu.png" alt="Management">
-                      <h4>HUBLU</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Services block -->
-
-              <!-- Clients block -->
-              <div class="block-title">
-                <h3>Ormawa Teknik</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_1.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_2.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_3.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_4.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_5.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_6.png" alt="image"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Clients block -->
-
-              <!-- Fun facts block -->
-              <div class="block-title">
-                <h3>Fun Facts</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block gray-bg"> 
-                    <i class="pe-7s-icon pe-7s-smile"></i>
-                    <h4>Happy Clients</h4>
-                    <span class="fun-value">1,024</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block"> 
-                    <i class="pe-7s-icon pe-7s-alarm"></i>
-                    <h4>Working Hours</h4>
-                    <span class="fun-value">6,256</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block gray-bg"> 
-                    <i class="pe-7s-icon pe-7s-medal"></i>
-                    <h4>Awards Won</h4>
-                    <span class="fun-value">21</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block"> 
-                    <i class="pe-7s-icon pe-7s-coffee"></i>
-                    <h4>Coffee Consumed</h4>
-                    <span class="fun-value">20,000</span>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Fun fucts block -->
-            </section>
-            <!-- End of About Me Subpage -->
-
-            <!-- Resume Subpage -->
-            <section class="pt-page pt-page-2" data-id="resume">
-              <div class="section-title-block">
-                <h2 class="section-title">Kegiatan</h2>
-                <h5 class="section-description">Daftar Acara</h5>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Akademik</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2010</h5>
-                      <h4 class="event-name">Specialization Course</h4>
-                      <span class="event-description">University of Studies</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2009</h5>
-                      <h4 class="event-name">Specialization Course</h4>
-                      <span class="event-description">University of Studies</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2008</h5>
-                      <h4 class="event-name">Specialization Course</h4>
-                      <span class="event-description">University of Studies</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Non-Akademik</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">Dec 2012 - Current</h5>
-                      <h4 class="event-name">Frontend-developer</h4>
-                      <span class="event-description">Web Agency</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">Dec 2011 - Nov 2012</h5>
-                      <h4 class="event-name">Web Designer</h4>
-                      <span class="event-description">Apple Inc.</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">Jan 2010 - Dec 2011</h5>
-                      <h4 class="event-name">Graphic Designer</h4>
-                      <span class="event-description">Web Agency</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-            <!-- End Resume Subpage -->
-
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page pt-page-3" data-id="portfolio">
-              <div class="section-title-block">
-                <h2 class="section-title">Anggota</h2>
-                <h5 class="section-description">Daftar anggota aktif</h5>
-              </div>
-
-              <!-- Portfolio Content -->
-              <div class="portfolio-content">
-                            
-                <!-- Portfolio filter -->
-                <ul id="portfolio_filters" class="portfolio-filters">
-                  <li class="active">
-                    <a class="filter btn btn-sm btn-link active" data-group="all">SEMUA</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="psdm">PSDM</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="sosmapol">SOSMAPOL</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="ristek">RISTEK</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="pora">PORA</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="medinfo">MEDINFO</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="hublu">HUBLU</a>
-                  </li>
-                </ul>
-                <!-- End of Portfolio filter -->
-
-                <!-- Portfolio Grid -->
-                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                  <!-- Portfolio Item 1 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/1.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 1 -->
-
-                  <!-- Portfolio Item 2 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/2.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 2 -->
-
-                  <!-- Portfolio Item 3 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                      <img src="images/portfolio/3.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 3 -->
-
-                  <!-- Portfolio Item 4 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/4.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 4 -->
-
-                  <!-- Portfolio Item 5 -->
-                  <figure class="item" data-groups='["all", "illustration"]'>
-                    <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
-                      <img src="images/portfolio/5.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 5 -->
-
-                  <!-- Portfolio Item 6 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/6.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 6 -->
-
-                  <!-- Portfolio Item 7 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/7.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 7 -->
-
-                  <!-- Portfolio Item 8 -->
-                  <figure class="item" data-groups='["all",  "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/8.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 8 -->
-
-                  <!-- Portfolio Item 9 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
-                      <img src="images/portfolio/9.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 9 -->
-
-                  <!-- Portfolio Item 10 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/10.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 10 -->
-
-                  <!-- Portfolio Item 11 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                      <img src="images/portfolio/11.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 11 -->
-
-                  <!-- Portfolio Item 12 -->
-                  <figure class="item" data-groups='["all","media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/12.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 12 -->
-                </div>
-                <!-- /Portfolio Grid -->
-
-              </div>
-              <!-- /Portfolio Content -->
-
-            </section>
-            <!-- /Portfolio Subpage -->
-
-            <!-- Blog Subpage -->
-            <section class="pt-page pt-page-4" data-id="blog">
-              <div class="section-title-block">
-                <h2 class="section-title">Blog</h2>
-                <h5 class="section-description">My Diary</h5>
-              </div>
-              <div class="blog-masonry">
-                <!-- Blog Post 1 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Travel</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 1 -->
-
-                <!-- Blog Post 2 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">jQuery</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 2 -->
-
-                <!-- Blog Post 3 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Sport</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 3 -->
-
-                <!-- Blog Post 4 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">CSS</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 4 -->
-
-                <!-- Blog Post 5 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">                        
-                      <ul class="category">
-                        <li><a href="#">CSS3</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Original and Innovative Web Layouts</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 5 -->
-
-                <!-- Blog Post 6 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">HTML5</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 6 -->
-
-                <!-- Blog Post 7 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Design</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for Mega-Sites</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 7 -->
-
-                <!-- Blog Post 8 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">CSS3</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 8 -->
-              </div>
-            </section>
-            <!-- End Blog Subpage -->
-
-            <!-- Contact Subpage -->
-            <section class="pt-page pt-page-5" data-id="contact">
-              <div class="section-title-block">
-                <h2 class="section-title">Hubungi Kami</h2>
-                <h5 class="section-description">Kontak Person BEM Teknik</h5>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Alamat</h3>
-                  </div>
-                  <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
-                  <div class="contact-info-block">
-                    <div class="ci-icon">
-                      <i class="pe-7s-icon pe-7s-map-marker"></i>
-                    </div>
-                    <div class="ci-text">
-                      <h5>Kudus, Jawa Tengah, Indonesia</h5>
-                    </div>
-                  </div>
-                  <div class="contact-info-block">
-                    <div class="ci-icon">
-                      <i class="pe-7s-icon pe-7s-mail"></i>
-                    </div>
-                    <div class="ci-text">
-                      <h5>bemteknik@umk.ac.id</h5>
-                    </div>
-                  </div>
-                  <div class="contact-info-block">
-                    <div class="ci-icon">
-                      <i class="pe-7s-icon pe-7s-call"></i>
-                    </div>
-                    <div class="ci-text">
-                      <h5>+123 654 78900</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Contact Form</h3>
-                  </div>
-                  <form id="contact-form" method="post" action="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/contact_form/contact_form.php">
-
-                    <div class="messages"></div>
-
-                    <div class="controls">
-                      <div class="form-group">
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-user"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group">
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-envelope"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group">
-                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-comment"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                      
-                      <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
-
-                      <input type="submit" class="button btn-send" value="Send message">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </section>
-            <!-- End Contact Subpage -->
-
-          </div>
+            </div>
+            <!-- /Page changer wrapper -->
         </div>
-        <!-- /Page changer wrapper -->
-      </div>
-      <!-- /Main Content -->
+        <!-- /Main Content -->
     </div>
-
-    <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/page-transition.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/validator.js"></script>
@@ -904,5 +1326,6 @@
     <!-- Demo Color changer Script -->
     <script src="preview/lmpixels-demo-panel.js"></script>
     <!-- /Demo Color changer Script -->
-  </body>
+</body>
+
 </html>
